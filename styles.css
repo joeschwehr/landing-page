@@ -1,0 +1,159 @@
+/*
+ * Globals
+ */
+
+ h1{
+   font-size: 5em;
+   line-height: .88em;
+ }
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+    /* margin: 0 auto; */
+  min-width: 100%;
+  /* background: url(./man.jpg) no-repeat center center fixed;
+  background-size: cover; */
+}
+
+body {  
+  color: #fff;
+  background-color: rgb(52, 159, 213);
+  display: block;
+  min-height: 100%;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+#full{
+  min-height: 96%;
+}
+.boxes{
+  display: flex;
+  min-height: 100%;
+}
+
+.box1{
+  display: flex;
+  align-items: center;
+  padding: 0 66px 0 166px;
+
+}
+
+.box2{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.main{  
+  /* max-width: 50%; */
+  z-index: 1;
+}
+
+.btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.bg-img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* src: "https://images.pexels.com/photos/257923/pexels-photo-257923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"; */
+    height: 100%; 
+    position: absolute;
+    margin-left: 730px;
+  }
+
+/*
+ * Footer
+ */
+footer {
+  z-index: 1;
+  color: rgba(255, 255, 255, .5);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-height: 4%;
+}
+
+#footer{
+  margin: 0;
+}
+
+/* This is a media query. It will apply this set of styles when our screen is less than 1200 px */
+@media(max-width: 1250px){
+  .bg-img{
+        margin-left: 675px;
+  }
+  h1{
+    font-size: 4em;
+  }
+}
+
+/* This is a media query. It will apply this set of styles when our screen is less than px */
+@media(max-width: 1150px){
+    .bg-img{
+      margin-left: 550px;
+  }
+  h1{
+    font-size: 3em;
+  }
+}
+
+
+/* This is a media query. It will apply this set of styles when our screen is less than px */
+@media(max-width: 1000px){
+    .bg-img{
+      margin-left: 440px;
+  }
+  .box1{
+    padding: 0 50px 0 75px;
+  }
+}
+
+/* This is a media query. It will apply this set of styles when our screen is less than px */
+@media(max-width: 850px){
+    .bg-img{
+      margin-left: 360px;
+  }
+
+  .box1{
+    padding: 0 50px 0 50px;
+  }
+}
+
+/* This is a media query. It will apply this set of styles when our screen is less than px */
+@media(max-width: 750px){
+  .bg-img{
+    margin-left: 270px;
+    max-height: 95%;
+}
+
+.box1{
+  padding: 0 5px 0 15px;
+}
+}
